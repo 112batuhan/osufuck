@@ -49,6 +49,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "either"
+version = "1.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a26ae43d7bcc3b814de94796a5e736d4029efb0ee900c12e2d54c993ad1a1e07"
+
+[[package]]
+name = "itertools"
+version = "0.12.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "25db6b064527c5d482d0423354fcd07a89a2dfe07b67892e62411946db7f07b0"
+dependencies = [
+ "either",
+]
+
+[[package]]
 name = "kernel32-sys"
 version = "0.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -88,7 +103,7 @@ checksum = "f665ee40bc4a3c5590afb1e9677db74a508659dfd71e126420da8274909a0167"
 [[package]]
 name = "osu-beatmap-parser"
 version = "0.14.0"
-source = "git+https://github.com/SailorSnoW/osu-beatmap-parser/#7e7eaf25bdda6e395d7548636d64a7c247aa1f25"
+source = "git+https://github.com/SailorSnoW/osu-beatmap-parser/#6f05452d3d1bdc58e709c8560debac3cce84e756"
 dependencies = [
  "bitflags",
  "regex 1.10.2",
@@ -100,6 +115,7 @@ name = "osufuck"
 version = "0.1.0"
 dependencies = [
  "brainfuck",
+ "itertools",
  "osu-beatmap-parser",
 ]
 

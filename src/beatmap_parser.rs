@@ -55,8 +55,8 @@ pub enum SliderDirection {
 }
 
 impl SliderDirection {
-    pub fn direction(p: &Point, q: &Point) -> Self {
-        if p.x > q.x {
+    pub fn direction(start: &Point, end: &Point) -> Self {
+        if start.x < end.x {
             Self::RIGHT
         } else {
             Self::LEFT
@@ -77,7 +77,7 @@ pub enum NotePosition {
 
 impl NotePosition {
     pub fn position(p: Point) -> Self {
-        if p.y < 192 {
+        if p.y > 192 {
             Self::DOWN
         } else {
             Self::UP

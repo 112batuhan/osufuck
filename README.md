@@ -17,8 +17,8 @@ Use `--path` argument to bypass file picker window.
 | note in bottom half                                                                                                           | -                    |
 | slider with two or less anchors * (linear or perfect circle) with last anchor placed on the **left side of the slider head**  | <                    |
 | slider with two or less anchors * (linear or perfect circle) with last anchor placed on the **right side of the slider head** | >                    |
-| slider with three or more anchors which rotates counter-clockwise                                                             | <                    |
-| slider with three or more anchors which rotates clockwise                                                                     | >                    |
+| slider with three or more anchors which rotates counter-clockwise                                                             | [                    |
+| slider with three or more anchors which rotates clockwise                                                                     | ]                    |
 | spinner                                                                                                                       | .                    |
 
 *: consecutive overlapped anchors are counted as one anchor. So you can have one red anchor in the slider and they will be parsed as `>` or `<`. 
